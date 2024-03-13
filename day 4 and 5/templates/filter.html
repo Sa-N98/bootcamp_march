@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter</title>
+</head>
+<body>
+    {% for i in searchResult %}
+    <img src= {{ i.poster }} >
+    <h2> {{ i.title }}</h2>
+    <h4> {{ i.rating }} </h4>
+    {%endfor%}
+</body>
+</html>
