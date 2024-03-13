@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        img {
+            width: 10%;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <br>
+    
+    <form action="/filter" , method="post">
+        <input type="text" name="searchKey"  placeholder="Search">
+        <input type="submit" value="Search">
+    </form>
+    <br>
+ {% for i in data %}
+ <img src= {{ i.poster }} >
+ <h2> {{ i.title }}</h2>
+ <h4> {{ i.rating }} </h4>
+  {% for j in i.genre %}
+  <p> {{ j.type}}</p>
+  {%endfor%}
+ {% endfor %}
+
+</body>
+</html>
