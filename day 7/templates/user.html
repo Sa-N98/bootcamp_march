@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>User Login</h2>
+    <form action="/" , name="user_login" method="post">
+        <input type="text" name="type"  value="login" required hidden>
+        <input type="email" name="email"  placeholder="email" required>
+        <input type="password" name="password"  placeholder="password" required>
+        <input type="submit" value="LogIn">
+    </form>
+    
+
+    <h2>User Signup</h2>
+    <form action="/" , name="user_signup" method="post">
+        <input type="text" name="type"  value="signup" required hidden>
+        <input type="text" name="username"  placeholder="username" required>
+        <input type="email" name="email"  placeholder="email" required>
+        <input type="password" name="password"  placeholder="password" required>
+        <input type="submit" value="SingUP">
+    </form>
+
+   <p> {{  massage }}</p>
+</body>
+</html>

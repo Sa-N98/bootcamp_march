@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details Form</title>
+</head>
+<body>
+    <h1>Movie Details</h1>
+    <form action="/api/add" method="post">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required><br>
+
+        <label for="rating">Rating (1 to 10):</label>
+        <input type="number" id="rating" name="rating" step="0.1" min="1" max="10" required><br>
+
+        <label for="poster">Poster URL:</label>
+        <input type="text" id="poster" name="poster" required><br>
+
+        <label for="genre">Genre:</label>
+        <select id="genre" name="genre" required>
+            <option value="Action">Action</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Animation">Animation</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Crime">Crime</option>
+            <option value="Documentary">Documentary</option>
+            <option value="Drama">Drama</option>
+            <option value="Family">Family</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Horror">Horror</option>
+            <option value="Musical">Musical</option>
+            <option value="Mystery">Mystery</option>
+            <option value="Romance">Romance</option>
+            <option value="Science Fiction">Science Fiction</option>
+            <option value="Thriller">Thriller</option>
+            <option value="War">War</option>
+            <option value="Western">Western</option>
+            <option value="Historical">Historical</option>
+            <option value="Biographical">Biographical</option>
+        </select><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
